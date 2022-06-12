@@ -16,7 +16,7 @@ const Login = () => {
       <Row>
         <Col md={6}>
           <Form className="login__form" onSubmit={handleLogin}>
-            <h1>
+            <h1 className="text-danger">
               <strong>Bhinneka Academy</strong>
             </h1>
 
@@ -29,9 +29,6 @@ const Login = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              {/* <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text> */}
             </Form.Group>
             {/* End of email */}
 
@@ -44,9 +41,6 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
             {/* End of Password */}
 
