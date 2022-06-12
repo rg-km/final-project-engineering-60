@@ -1,6 +1,9 @@
-# Final Project Engineering 60
+# Final Project Engineering 60 - Bhinneka Academy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Ini Mengandung Rempah - Rempah (Library):
+* React Bootstrap [Link](https://react-bootstrap.netlify.app/getting-started/)
+* React Router DOM v6 [Link](https://reactrouter.com/docs/en/v6/getting-started/)
+* React Router Bootstrap [Link](https://www.npmjs.com/package/react-router-bootstrap)
 
 ## Cara Menggunakan
 
