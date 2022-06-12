@@ -54,12 +54,15 @@ const Login = () => {
 
             <div className="py-4">
               <p>
-                Belum punya akun? <Link to="/register">Daftar</Link>
+                Belum punya akun?{" "}
+                <Link className="link__style" to="/register">
+                  <strong>Daftar</strong>
+                </Link>
               </p>
             </div>
           </Form>
         </Col>
-        
+
         {/* Banner */}
         <Col md={6} className="login__bg--container"></Col>
       </Row>
