@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Login.css";
+import "./Register.css";
 
-const Login = () => {
+const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  const handleRegister = (e) => {
     e.preventDefault();
   };
 
@@ -15,9 +15,9 @@ const Login = () => {
     <Container>
       <Row>
         <Col md={6}>
-          <Form className="login__form" onSubmit={handleLogin}>
+          <Form className="register__form" onSubmit={handleRegister}>
             <h1 className="text-danger">
-              <strong>Bhinneka Academy</strong>
+              <strong>Buat Akun</strong>
             </h1>
 
             {/* Email */}
@@ -47,24 +47,27 @@ const Login = () => {
             {/* Submit */}
             <div className="d-grid gap-2">
               <Button variant="danger" type="submit" size="md">
-                Masuk
+                Daftar
               </Button>
             </div>
             {/* End of Submit */}
 
             <div className="py-4">
               <p>
-                Belum punya akun? <Link to="/register">Daftar</Link>
+                Sudah punya akun? {""}
+                <Link className="link__style" to="/login">
+                  <strong>Masuk</strong>
+                </Link>
               </p>
             </div>
           </Form>
         </Col>
-        
+
         {/* Banner */}
-        <Col md={6} className="login__bg--container"></Col>
+        <Col md={6} className="register__bg--container"></Col>
       </Row>
     </Container>
   );
 };
 
-export default Login;
+export default Register;
