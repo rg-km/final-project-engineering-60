@@ -54,7 +54,7 @@ const Login = () => {
 
             <div className="py-4">
               <p>
-                Belum punya akun? <Link to="#">Daftar</Link>
+                Belum punya akun? <Link to="/register">Daftar</Link>
               </p>
             </div>
           </Form>
