@@ -10,5 +10,7 @@
 Di dalam direktori/folder local kalian masing - masing, jalankan ini:
 
 1. `cd frontend/`
+
 2. `npm install`
+
 3. `npm start`
