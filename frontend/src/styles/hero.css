@@ -1,0 +1,25 @@
+.hero {
+    background-color: #f2f2f2;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 5vw;
+}
+
+.hero__title {
+    margin-top: 4vw;
+}
+
+.hero__title--span {
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+.hero__subtitle {
+    font-size: 15pt;
+    margin-top: 2.5vw;
+}
+
+.hero__button {
+    margin-top: 2.5vw;
+    box-shadow: 2px 2px #bdbdbd;
+}
