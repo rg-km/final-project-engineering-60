@@ -1,8 +1,10 @@
 .hero {
+    background-image: url('../images/banner-login.png');
     background-color: #f2f2f2;
-    min-width: 100%;
-    min-height: 100%;
-    padding: 5vw;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
 }
 
 .hero__title {
