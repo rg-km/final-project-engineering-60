@@ -16,6 +16,12 @@ const Navbars = () => {
             <LinkContainer to="/">
               <Nav.Link className="text-white">Home</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/card">
+              <Nav.Link className="text-white">My Article</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/about">
+              <Nav.Link className="text-white">Edit Post</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/about">
               <Nav.Link className="text-white">About</Nav.Link>
             </LinkContainer>
