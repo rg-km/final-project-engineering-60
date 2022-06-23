@@ -12,3 +12,10 @@ type User struct {
 	Role              string    `db:"role"`
 	Token             string    `db:"token"`
 }
+
+type Blog struct {
+	ID                int64     `db:"id_user"`
+	tanggal_update    time.Time `db:"tanggal_update"`
+	judul_blog 	  	  string    `db:"judul_blog"`
+	isi_blog 		  string    `db:"isi_blog"`
+}
