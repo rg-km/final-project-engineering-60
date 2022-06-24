@@ -30,6 +30,23 @@ func (u *UserRepository) Login(username string, password string) (*string, error
 	return &user.Username, nil
 }
 
+func (u *UserRepository) Register(username string, email string, password string) error {
+	
+	sqlStatement := `
+		INSERT INTO users
+		(username, email, password)
+		VALUES
+		(?, ?, ?)
+	;`
+
+	_, err := u.db.Exec(sqlStatement, username, email, password)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (u *UserRepository) FetchUserRole(username string) (*string, error) {
 	var user User
 	var sqlStatement string

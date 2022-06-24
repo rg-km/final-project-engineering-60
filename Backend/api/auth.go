@@ -12,6 +12,14 @@ type User struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
 }
+
+type Register struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
+	Email 	 string `json:"email"`
+
+}
+
 type UserErrorResponse struct {
 	Error string `json:"error"`
 }
@@ -22,6 +30,12 @@ type LoginSuccessResponse struct {
 	Username string `json:"username"`
 	Token    string `json:"token"`
 }
+
+type RegisterSuccessResponse struct {
+	Username string `json:"username"`
+	Token    string `json:"token"`
+}
+
 type AuthErrorResponse struct {
 	Error string `json:"error"`
 }
@@ -87,6 +101,29 @@ func (api *API) login(w http.ResponseWriter, req *http.Request) {
 
 	json.NewEncoder(w).Encode(LoginSuccessResponse{Username: *res, Token: tokenString})
 }
+
+
+func (api *API) register(w http.ResponseWriter, req *http.Request) {
+	api.AllowOrigin(w, req)
+	var user Register
+	err := json.NewDecoder(req.Body).Decode(&user)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	err = api.userRepo.Register(user.Username, user.Email, user.Password)
+	if err != nil {
+		w.WriteHeader(http.StatusUnauthorized)
+		w.Write([]byte("Registration Failed"))
+		return
+	}
+	w.WriteHeader(http.StatusCreated)
+	w.Write([]byte("Registration successful"))
+
+}
+
+
 
 func (api *API) logout(w http.ResponseWriter, req *http.Request) {
 	api.AllowOrigin(w, req)
