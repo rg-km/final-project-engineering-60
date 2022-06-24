@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Login.css";
@@ -12,32 +12,36 @@ class Login extends Component{
             password:'',
         }
     }
+
+    
     login ()
     {
     
         console.warn(this.state)
-        fetch("http://localhost:3005/Login?q="+ this.state.email).then((data)=>{
+        fetch("http://localhost:3001/Login"+ this.state.email).then((data)=>{
             data.json().then((resp)=>{
                 console.warn("resp", resp)
-                // if(resp.length > 0)
-                // {
-                //     console.warn(this.props.history.push('list'))
-                // }
-                // else
-                // {
-                //     alert("Email dan Password Tidak Terdaftar")
-                // }
+                if(resp.length > 0)
+                {
+                    console.warn(this.props.history.push('list'))
+                    // map db.json, cari email yang cocok di respon, kalau cocok nge list, kalau tidak cocok muncul alert
+                }
+                else
+                {
+                    alert("Email dan Password Tidak Terdaftar")
+                }
             })
         })
     
       }
+
 
 render(){
   return (
     <Container>
       <Row>
         <Col md={6}>
-          <Form className="login__form" >
+          <Form className="login__form">
             <h1 className="text-danger">
               <strong>Bhinneka Academy</strong>
             </h1>
@@ -48,7 +52,7 @@ render(){
               <Form.Control
                 type="email"
                 placeholder="Masukkan Email"
-                name='email'
+                name='users'
                 onChange={(event)=>this.setState({email:event.target.value})}
               />
             </Form.Group>

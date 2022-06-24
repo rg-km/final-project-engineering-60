@@ -1,9 +1,18 @@
 {
-    "Register":[
-    {"email": "coba123@gmail.com", 
-    "password" : "123"}
-
-    ]
-
-    
+  "Register": [
+    {
+      "email": "coba123@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "13dc2440470",
+      "email": "maskur@gmail.com",
+      "password": "unhas"
+    },
+    {
+      "id": "dc2440470dd",
+      "email": "ini@gmail.com",
+      "password": "321"
+    }
+  ]
 }
