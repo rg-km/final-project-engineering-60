@@ -1,0 +1,10 @@
+.footer{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color:aliceblue
+  }
