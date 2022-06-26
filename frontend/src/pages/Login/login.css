@@ -1,0 +1,17 @@
+.login__bg--container{
+    background-image: url('https://res.cloudinary.com/drpf1nmjx/image/upload/v1656263731/banner-login_ldposa.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+}
+
+.login__form{
+    width: 80%;
+    margin: 100px 0px;
+}
+
+.link__style{
+    color: #212529;
+    text-decoration: none;
+}
