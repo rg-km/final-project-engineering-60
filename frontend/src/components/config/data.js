@@ -1,0 +1,111 @@
+export const blogList = [
+  {
+    id: 1,
+    title: 'Rumah Adat di Indonesia',
+    category: 'Rumah',
+    subCategory: ['nusantara', 'daerah', 'khas'],
+    description:
+      "Inilah 5 rumah adat di Indonesia..",
+    authorName: 'Faizal Aji',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/faizal_ssown6.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262166/rumah_mzvdpu.jpg`,
+  },
+  {
+    id: 2,
+    title: 'Pakaian Adat',
+    category: 'Budaya',
+    subCategory: ['pakaian', 'adat', 'daerah'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Faizal Aji',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/faizal_ssown6.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: 'https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262166/pakaian_alwc54.jpg',
+  },
+  {
+    id: 3,
+    title: 'Tari Tradisional',
+    category: 'Budaya',
+    subCategory: ['tari', 'daerah', 'khas'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Faizal Aji',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/faizal_ssown6.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: 'https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262166/Tari_qkfz6q.jpg',
+  },
+  {
+    id: 4,
+    title: 'Upacara Adat',
+    category: 'Tradisi',
+    subCategory: ['adat', 'agama', 'budaya'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Hafizul',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/hafizul_pvzm9z.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: 'https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262166/Adat_grwgld.jpg',
+  },
+  {
+    id: 5,
+    title: 'Suku - Suku di Indonesia',
+    category: 'lorem',
+    subCategory: ['lorem', 'lorem', 'lorem'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Hafizul',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/hafizul_pvzm9z.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: 'https://res.cloudinary.com/drpf1nmjx/image/upload/v1656265336/suku_s3qbqs.jpg',
+  },
+  {
+    id: 6,
+    title: 'Bangunan Bersejarah',
+    category: 'lorem',
+    subCategory: ['lorem', 'lorem', 'lorem'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Nurul',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/nurul_hpdgtu.jpg`,
+    createdAt: '26 Juni 2022',
+    cover:
+      'https://res.cloudinary.com/drpf1nmjx/image/upload/v1656265337/bangunan_sp5lts.jpg',
+  },
+  {
+    id: 7,
+    title: 'Makanan Khas Tradisional',
+    category: 'lorem',
+    subCategory: ['lorem', 'lorem', 'lorem'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Nurul',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/nurul_hpdgtu.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: 'https://res.cloudinary.com/drpf1nmjx/image/upload/v1656265336/makanan_xalits.png',
+  },
+  {
+    id: 8,
+    title: 'Lorem',
+    category: 'lorem',
+    subCategory: ['lorem', 'lorem', 'lorem'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Lisma',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/lisma_tlplqv.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: '/assets/images/Synthwave-Postmodern.jpg',
+  },
+  {
+    id: 9,
+    title: 'Lorem',
+    category: 'lorem',
+    subCategory: ['lorem', 'lorem', 'lorem'],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    authorName: 'Lisma',
+    authorAvatar: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/lisma_tlplqv.jpg`,
+    createdAt: '26 Juni 2022',
+    cover: '/assets/images/Synthwave-Postmodern.jpg',
+  },
+];
