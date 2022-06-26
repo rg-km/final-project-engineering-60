@@ -2,12 +2,12 @@ import React from 'react'
 import About from "./About"
 import {Container, Row, Col} from "react-bootstrap";
 
-import faizal from "../../images/faizal.jpeg";
-import hafizul from "../../images/hafizul.jpeg";
-import alkautsar from "../../images/alkautsar.jpeg";
-import nurul from "../../images/nurul.jpeg";
-import lisma from "../../images/lisma.jpeg";
-import wanita from "../../images/wanita.jpg";
+// import faizal from "../../images/faizal.jpeg";
+// import hafizul from "../../images/hafizul.jpeg";
+// import alkautsar from "../../images/alkautsar.jpeg";
+// import nurul from "../../images/nurul.jpeg";
+// import lisma from "../../images/lisma.jpeg";
+// import wanita from "../../images/wanita.jpg";
 
 const isi =[
     {
@@ -15,7 +15,7 @@ const isi =[
         title:"Faizal Aji Wibowo",
         job: "Frontend",
         body: "Mahasiswa Teknik Informatika dari Politeknik Harapan Bersama Kota Tegal",
-        image:faizal,
+        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/faizal_ssown6.jpg`,
         url: "https://instagram.com/faizalajiw"
     },
     {
@@ -23,7 +23,7 @@ const isi =[
         title:"Hafizul Akbar",
         job: "Frontend",
         body: "Mahasiswa MIPA Informatika dari Universitas Syiah Kuala Kota Banda Aceh",
-        image:hafizul,
+        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/hafizul_pvzm9z.jpg`,
         url: "https://instagram.com/hfizulakbr"
     },
     {
@@ -31,7 +31,7 @@ const isi =[
         title:"Muh. Al-Kautsar Hasril",
         job: "Frontend",
         body: "Mahasiswa Teknik Elektro dari Universitas Hasanuddin Kota Makasar",
-        image:alkautsar,
+        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/alkautsar_ihe3wu.jpg`,
         url: "https://instagram.com/kamaboko_gonpachiro"
     }
 ]
@@ -42,7 +42,7 @@ const isi2 = [
         title:"Nurul Aqmarina",
         job: "Frontend",
         body: "Mahasiswa Sistem Informasi dari Universitas Trunojoyo Madura",
-        image:nurul,
+        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/nurul_hpdgtu.jpg`,
         url: "https://instagram.com/aqmarrina"
     },
     {
@@ -50,7 +50,7 @@ const isi2 = [
         title:"Lisma Nurmala",
         job: "Backend",
         body: "Mahasiswa Sistem Informasi dari STMIK AMIK Bandung",
-        image:lisma,
+        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/lisma_tlplqv.jpg`,
         url: "https://instagram.com/ehlisma"
     },
     {
@@ -58,7 +58,7 @@ const isi2 = [
         title:"Gloria Pabiola",
         job: "Backend",
         body: "Mahasiswa MIPA dari Universitas di Indonesia",
-        image:wanita,
+        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1655565099/cld-sample.jpg`,
         url: "https://instagram.com"
     }
 ]
