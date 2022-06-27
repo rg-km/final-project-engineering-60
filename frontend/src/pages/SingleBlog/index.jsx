@@ -5,6 +5,7 @@ import { blogList } from '../../components/config/data';
 import Chip from '../../components/common/Chip';
 import EmptyList from '../../components/common/EmptyList';
 import './styles.css';
+import { UilArrowCircleLeft } from '@iconscout/react-unicons'
 
 const SingleBlog = () => {
   const { id } = useParams();
@@ -20,7 +21,7 @@ const SingleBlog = () => {
   return (
     <>
       <Link className='blog-goBack' to='/'>
-        <span> &#8592;</span> <span>Go Back</span>
+        <UilArrowCircleLeft /> <span>Kembali</span>
       </Link>
       {blog ? (
         <div className='blog-wrap'>
