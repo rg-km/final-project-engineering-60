@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
 import "./register.css";
 
@@ -45,11 +46,13 @@ const Register = () => {
             {/* End of Password */}
 
             {/* Submit */}
+            <LinkContainer to="/login"> 
             <div className="d-grid gap-2">
               <Button variant="danger" type="submit" size="md">
                 Daftar
               </Button>
             </div>
+            </LinkContainer>
             {/* End of Submit */}
 
             <div className="py-4">
