@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./login.css";
+import { LinkContainer } from "react-router-bootstrap";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -45,11 +46,13 @@ const Login = () => {
             {/* End of Password */}
 
             {/* Submit */}
+            <LinkContainer to="/">
             <div className="d-grid gap-2">
               <Button variant="danger" type="submit" size="md">
                 Masuk
               </Button>
             </div>
+            </LinkContainer>
             {/* End of Submit */}
 
             <div className="py-4">
