@@ -5,8 +5,8 @@ import Footer from "./components/common/Footer/Footer";
 import Card from "./pages/About/Card";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-import './App.css';
 import SingleBlog from './pages/SingleBlog';
+import './App.css';
 
 const App = () => {
   return (
@@ -22,7 +22,6 @@ const App = () => {
       </Routes>
       <Footer />
     </BrowserRouter>
-
   );
 }
 
