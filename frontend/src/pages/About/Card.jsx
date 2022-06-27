@@ -1,100 +1,42 @@
-import React from 'react'
-import About from "./About"
-import {Container, Row, Col} from "react-bootstrap";
+import React from "react";
+import About from "./About";
+import { Container, Row, Col } from "react-bootstrap";
+import { profile1, profile2 } from "../../components/config/data";
 
-// import faizal from "../../images/faizal.jpeg";
-// import hafizul from "../../images/hafizul.jpeg";
-// import alkautsar from "../../images/alkautsar.jpeg";
-// import nurul from "../../images/nurul.jpeg";
-// import lisma from "../../images/lisma.jpeg";
-// import wanita from "../../images/wanita.jpg";
-
-const isi =[
-    {
-        id:1,
-        title:"Faizal Aji Wibowo",
-        job: "Frontend",
-        body: "Mahasiswa Teknik Informatika dari Politeknik Harapan Bersama Kota Tegal",
-        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/faizal_ssown6.jpg`,
-        url: "https://instagram.com/faizalajiw"
-    },
-    {
-        id:2,
-        title:"Hafizul Akbar",
-        job: "Frontend",
-        body: "Mahasiswa MIPA Informatika dari Universitas Syiah Kuala Kota Banda Aceh",
-        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/hafizul_pvzm9z.jpg`,
-        url: "https://instagram.com/hfizulakbr"
-    },
-    {
-        id:3,
-        title:"Muh. Al-Kautsar Hasril",
-        job: "Frontend",
-        body: "Mahasiswa Teknik Elektro dari Universitas Hasanuddin Kota Makasar",
-        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/alkautsar_ihe3wu.jpg`,
-        url: "https://instagram.com/kamaboko_gonpachiro"
-    }
-]
-
-const isi2 = [
-    {
-        id:1,
-        title:"Nurul Aqmarina",
-        job: "Frontend",
-        body: "Mahasiswa Sistem Informasi dari Universitas Trunojoyo Madura",
-        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262624/nurul_hpdgtu.jpg`,
-        url: "https://instagram.com/aqmarrina"
-    },
-    {
-        id:2,
-        title:"Lisma Nurmala",
-        job: "Backend",
-        body: "Mahasiswa Sistem Informasi dari STMIK AMIK Bandung",
-        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/lisma_tlplqv.jpg`,
-        url: "https://instagram.com/ehlisma"
-    },
-    {
-        id:3,
-        title:"Gloria Pabiola",
-        job: "Backend",
-        body: "Mahasiswa MIPA dari Universitas di Indonesia",
-        image:`https://res.cloudinary.com/drpf1nmjx/image/upload/v1655565099/cld-sample.jpg`,
-        url: "https://instagram.com"
-    }
-]
-
-function Card() {
+const Card = () => {
   return (
     <Container fluid>
-        <Row className='bg-light mb-5 py-4'>
-            <h1 className="text-center">About</h1>
-        </Row>
-        <Row className="justify-content-md-center mb-5">
-            {
-                isi.map(content => (
-                    <Col md={3} key={isi.id}>
-                        <About title={content.title} image={content.image} body={content.body} job={content.job}
-                        url={content.url}/>
-                    </Col>
-                ))
-            }
-        </Row>
-        <Row className="justify-content-md-center mb-5">
-            {
-                isi2.map(Card => (
-                    <Col md={3} key={isi2.id}>
-                        <About title={Card.title} image={Card.image} body={Card.body} job={Card.job} url={Card.url}/>
-                    </Col>
-                ))
-            }
-        </Row>
-        <Row className='bg-dark py-2'>
-            <div className="text-center text-white">
-                &copy; 2022 Bhinneka Academy — Create by Kelompok 60
-            </div>
-        </Row>
+      <Row className="bg-light mb-5 py-4">
+        <h1 className="text-center">About</h1>
+      </Row>
+      <Row className="justify-content-md-center mb-5">
+        {profile1.map((content) => (
+          <Col md={3} key={profile1.id}>
+            <About
+              title={content.title}
+              image={content.image}
+              body={content.body}
+              job={content.job}
+              url={content.url}
+            />
+          </Col>
+        ))}
+      </Row>
+      <Row className="justify-content-md-center mb-5">
+        {profile2.map((Card) => (
+          <Col md={3} key={profile2.id}>
+            <About
+              title={Card.title}
+              image={Card.image}
+              body={Card.body}
+              job={Card.job}
+              url={Card.url}
+            />
+          </Col>
+        ))}
+      </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

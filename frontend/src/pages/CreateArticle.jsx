@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function createArticle () {
+const createArticle = () => {
     return(
         <div className="container">
             <form>
@@ -25,3 +25,5 @@ export default function createArticle () {
         </div>
     )
 }
+
+export default createArticle;

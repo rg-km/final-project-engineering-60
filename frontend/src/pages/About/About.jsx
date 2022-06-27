@@ -1,11 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-
 const About = ({title, job, image, body, url}) => {
     return (
         <Container>
-            
             <div className="card text-center">
                 <img src={image} alt="" className="card-img-top"/>
                 
