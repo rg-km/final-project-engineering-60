@@ -1,6 +1,5 @@
 .hero {
-    background-image: url('https://res.cloudinary.com/drpf1nmjx/image/upload/v1656265336/tari-kecak-1_169_ad3ayb.jpg');
-    background-color: #f2f2f2;
+    background-image: url('https://res.cloudinary.com/drpf1nmjx/image/upload/v1656327011/banner_zdahnp.png');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,7 +11,7 @@
 }
 
 .hero__title--span {
-    font-size: 35pt;
+    font-size: 45px;
     font-weight: bold;
 }
 
