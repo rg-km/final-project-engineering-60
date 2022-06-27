@@ -7,6 +7,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import './App.css';
 import SingleBlog from './pages/SingleBlog';
+import CreateArticle from "./pages/CreateArticle";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/about" element={<Card />} />
         <Route path="/login" element ={<Login />} />
         <Route path="/register" element ={<Register />} />
+        <Route path="/createArticle" element ={<CreateArticle />} />
         <Route to='/' />
       </Routes>
       <Footer />

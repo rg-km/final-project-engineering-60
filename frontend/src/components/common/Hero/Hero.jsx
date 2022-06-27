@@ -1,6 +1,7 @@
 import React from "react";
 import './hero.css';
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,10 +19,15 @@ const Hero = () => {
               industry.
             </span>
           </div>
-          <div className="">
+          <div className="d-flex jsutify-content-start gap-5">
             <Button variant="danger" size="md" className="hero__button">
               <span>Browse Article</span>
             </Button>
+            <Link className="" to="/CreateArticle">
+              <Button variant="danger" size="md" className="hero__button" >
+                <span>Create Article</span>
+              </Button>
+            </Link>
           </div>
         </Col>
 

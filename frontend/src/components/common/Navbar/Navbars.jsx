@@ -19,6 +19,9 @@ const Navbars = () => {
             <LinkContainer to="/about">
               <Nav.Link className="text-white">About</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/CreateArticle">
+              <Nav.Link className="text-white">Create article</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/login">
               <Nav.Link className="btn btn-danger text-white">Login</Nav.Link>
             </LinkContainer>
