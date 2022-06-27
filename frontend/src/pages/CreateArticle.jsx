@@ -28,7 +28,7 @@ const createArticle = () => {
                 <textarea class="form-control" placeholder="Create Article" id="exampleFormControlTextarea1" rows="10"></textarea>
                 </div>
                 <LinkContainer to="/">
-                    <button type="submit" class="btn btn-danger">Submit</button>
+                    <button type="submit" className="btn btn-danger">Submit</button>
                 </LinkContainer>
             </form>
         </div>
