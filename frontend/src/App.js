@@ -6,6 +6,7 @@ import Card from "./pages/About/Card";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import SingleBlog from './pages/SingleBlog';
+import CreateArticle from "./pages/CreateArticle";
 import './App.css';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/about" element={<Card />} />
         <Route path="/login" element ={<Login />} />
         <Route path="/register" element ={<Register />} />
+        <Route path="/createArticle" element ={<CreateArticle />} />
         <Route to='/' />
       </Routes>
       <Footer />

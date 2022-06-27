@@ -3,7 +3,7 @@ import './styles.css';
 
 const EmptyList = () => (
   <div className='emptyList-wrap'>
-    <img src='/assets/images/13525-empty.gif' alt='empty' />
+    <img src='https://res.cloudinary.com/drpf1nmjx/image/upload/v1656321508/404_xhwp7b.gif' alt='empty' />
   </div>
 );
 
