@@ -1,13 +1,14 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import './navbar.css'
 
 const Navbars = () => {
   return (
-    <Navbar bg="dark" expand="lg">
+    <Navbar className="background" expand="lg">
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand className="text-white">Bhinneka Academy</Navbar.Brand>
+          <Navbar.Brand className="text-white"><img src="https://res.cloudinary.com/drpf1nmjx/image/upload/v1656331413/Logo_iz0nkb.png" alt="" /></Navbar.Brand>
         </LinkContainer>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

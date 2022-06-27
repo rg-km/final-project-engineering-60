@@ -3,7 +3,6 @@ See on here :point_right: https://bhinneka-academy.netlify.app/
 
 ## Anggota Kelompok:
 * Back-End:
-    - Gloria Pabiola (BE2142329)
     - Lisma Nurmala (BE2249995)
 * Front-End:
     - Faizal Aji Wibowo (FE2263054)
