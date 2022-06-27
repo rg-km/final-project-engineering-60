@@ -160,12 +160,4 @@ export const profile2 = [
     image: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1656262623/lisma_tlplqv.jpg`,
     url: "https://instagram.com/ehlisma",
   },
-  {
-    id: 3,
-    title: "Gloria Pabiola",
-    job: "Backend",
-    body: "Mahasiswa MIPA dari Universitas di Indonesia",
-    image: `https://res.cloudinary.com/drpf1nmjx/image/upload/v1655565099/cld-sample.jpg`,
-    url: "https://instagram.com",
-  },
 ];
