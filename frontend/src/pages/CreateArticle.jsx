@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
+
 
 const createArticle = () => {
     return(
@@ -20,7 +23,9 @@ const createArticle = () => {
                 <div class="mb-3" style={{boxShadow:"2px 2px #bdbdbd rounded"}}>
                 <textarea class="form-control" placeholder="Create Article" id="exampleFormControlTextarea1" rows="10"></textarea>
                 </div>
+                <LinkContainer to="/">
                     <button type="submit" class="btn btn-danger">Submit</button>
+                </LinkContainer>
             </form>
         </div>
     )
