@@ -18,7 +18,7 @@ const Hero = () => {
               Pendidikan mengajarkan manusia melintasi ruang dan waktu
             </span>
           </div>
-          <div className="d-flex jsutify-content-start gap-5">
+          <div className="d-flex jsutify-content-start gap-4">
             <Button variant="danger" size="md" className="hero__button">
               <span>Browse Article</span>
             </Button>
