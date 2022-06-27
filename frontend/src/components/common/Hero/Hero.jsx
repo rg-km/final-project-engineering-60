@@ -15,10 +15,10 @@ const Hero = () => {
           </div>
           <div className="hero__subtitle">
             <span className="hero__subtitle--span">
-            Pendidikan budaya dan karakter bangsa pada dasarnya adalah pengembangan nilai-nilai yang berasal dari pandangan hidup atau ideologi bangsa Indonesia, agama, budaya, dan nilai-nilai yang terumuskan dalam tujuan pendidikan nasional
+            “Pendidikan budaya dan karakter bangsa pada dasarnya adalah pengembangan nilai-nilai yang berasal dari pandangan hidup atau ideologi bangsa Indonesia, agama, budaya, dan nilai-nilai yang terumuskan dalam tujuan pendidikan nasional.”
             </span>
           </div>
-          <div className="d-flex jsutify-content-start gap-4">
+          <div className="d-flex jsutify-content-start gap-5">
             <Link className="" to="/CreateArticle">
               <Button variant="danger" size="md" className="hero__button" >
                 <span>Create Article</span>
